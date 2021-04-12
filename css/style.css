@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+header{
+    background-image: url("../assets/backimage.png") !important;
+    background-repeat: no-repeat;
+    background-size: 46%;
+}
+
+/* Navbar */
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+    
+}
+
+li{
+    list-style-type: none;
+    display: inline;
+    padding: 0 10px;
+    
+}
+
+a{
+    text-decoration: none;
+    color: #132C33;
+}
+
+a:hover{
+    border-bottom: 1px solid #C0C0C0;
+    border-bottom-width: 2px;
+}
+
+.login-Btn{
+    border: 1px solid #132C33;
+    border-radius: 30px;
+    padding: 3px 15px;
+    /* border-bottom-width: 0; */
+}
+
+.joinUs-Btn{
+    border-radius: 30px;
+    padding: 3px 15px;
+    background-color: #132C33;
+    margin-left: 10px;
+}
+
+.joinUs-Btn a{
+    color: white;
+    border-bottom-width: 0;
+}
+
+
+/* Hero */
+#welcome{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 25px;
+    
+}
+
+.welcome-hero{
+    width: 50vw;
+    margin-right: 150px;
+    margin-left: 35px;
+    height: 30em;
+    /* padding: 0 50px; */
+}
+
+
+.welcome-hero h1{
+    font-size: 54px;
+}
+
+.welcome-hero p{
+    font-size: 18px;
+    margin-top: 30px;
+}
+
+.welcome-hero button{
+    border: none;
+    border-radius: 30px;
+    padding: 7px 35px;
+    background-color: #132C33;
+    margin-top: 10px;
+    color: white;
+}
+
+.hero-img img{
+    height: 400px;
+    width: 700px;
+    z-index: 1;
+    background-color: #F7F7F7; 
+}
+
+
+/* Main page */
+#main-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 35px;
+    margin: 0 25px;
+}
+
+.main-image img{
+    height: 400px;
+}
+
+/* Register Section */
+#register{
+    border-left: 2px solid #DAD8E7;
+    padding: 30px;
+}
+
+#register h2{
+    font-size: 40px;
+    padding: 10px 0;
+}
+
+#register p{
+    font-size: 10px;
+    color: #132C33;
+    padding-bottom: 10px;
+}
+#register input{
+    padding: 8px 2em 8px 1.5em ;
+    margin: 5px 15px;
+    border-radius: 30px;
+    border: 1px solid #132C33;
+}
+
+#register input:focus{
+    outline: none;
+    border-radius: 30px;
+     border: 1px solid #70C6C5;
+}
+
+#register .name{
+    padding-bottom: 10px;
+}
+
+#register .name label{
+    margin-right: 85px;
+    padding: 10 30px 10px 0 ;
+}
+
+#register .email{
+    padding-bottom: 10px;
+}
+
+#register .email label{
+    margin-right: 30px;
+    padding: 10 30px 10px 0 ;
+}
+
+#register .email input, #register .phone-number input{
+    padding: 8px 20em 8px 1.5em ;
+}
+
+#register .phone-number{
+    padding-bottom: 10px;
+}
+
+#register .phone-number label{
+    margin-right: 23px;
+    padding: 10 30px 10px 0 ;
+}
+
+#register .password{
+    padding-bottom: 10px;
+}
+
+#register .password label{
+    margin-right: 55px;
+    padding: 10 30px 10px 0 ;
+}
+
+
+.register-btn {
+    text-align: right;
+}
+
+.register-btn button{
+    border: none;
+    border-radius: 30px;
+    padding: 9px 35px;
+    background-color: #132C33;
+    margin-top: 10px;
+    color: white;
+    
+}
+
+.register-btn .login-link{
+    font-weight: bold;
+}
+
+/* Main footer  */
+
+footer{
+    background-color: #132C33;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color:#D8E3E7;
+    font-size: 12px;
+    margin-top: 15px;
+    width: 100%;
+}
