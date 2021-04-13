@@ -21,17 +21,17 @@ customPassworFieldIcon.addEventListener('click', function (e) {
     this.classList.toggle('fa-eye-slash');
 });
 
-// const toggle = document.getElementById("navbarSupportedContent");
-// const screenWidth = window.screen.width;
-// console.log(screenWidth);
-// if(screenWidth >500){
-//     if(toggle.classList.contains("collapse") ||  toggle.classList.contains("navbar-collapse")){
-//         print('true');
-//         toggle.classList.remove("collapse");
-//         toggle.classList.remove("navbar-collapse");
-//     }else{
-//         toggle.classList.add("collapse");
-//         toggle.classList.add("navbar-collapse");
-//     }
-// }
+const toggle = document.getElementById("navbarSupportedContent");
+const screenWidth = window.screen.width;
+console.log(screenWidth);
+if(screenWidth >500){
+    if(toggle.classList.contains("collapse") ||  toggle.classList.contains("navbar-collapse")){
+        print('true');
+        toggle.classList.remove("collapse");
+        toggle.classList.remove("navbar-collapse");
+    }else{
+        toggle.classList.add("collapse");
+        toggle.classList.add("navbar-collapse");
+    }
+}
 
