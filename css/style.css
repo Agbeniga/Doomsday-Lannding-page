@@ -25,8 +25,9 @@ li{
     list-style-type: none;
     display: inline;
     padding: 0 10px;
-    
 }
+
+
 
 a{
     text-decoration: none;
@@ -40,15 +41,22 @@ a:hover{
     color: #132C33;
 }
 
+
+
 .login-Btn{
     border: 1px solid #132C33;
     border-radius: 30px;
     padding: 1px 15px 5px 15px;
 }
 
+.login-Btn a:hover{
+    border-bottom: none;
+    
+}
+
 .joinUs-Btn{
     border-radius: 30px;
-    padding: 1px 15px 5px 15px;
+    padding: 3px 15px 5px 15px;
     background-color: #132C33;
     margin-left: 10px;
 }
@@ -57,6 +65,9 @@ a:hover{
     color: white;
     border-bottom-width: 0;
 }
+
+
+
 
 
 /* Hero */
@@ -69,14 +80,14 @@ a:hover{
     margin-bottom: 3em;
 }
 
-.welcome-hero{
+/* .welcome-hero{
     width: 50vw;
     height: 30em;
-}
+} */
 
 
 .welcome-hero h1{
-    font-size: 4em;
+    font-size: 3em;
     font-weight: bold;
     line-height: 40px;
 }
@@ -375,7 +386,15 @@ footer{
     }
 }
 
-@media only screen and (max-width: 650px) {
+@media only screen and (min-width: 680px){
+    .navbar-toggler{
+        display: none;
+    }
+    /* .collapse{
+        display: inline;
+    } */
+}
+@media only screen and (max-width: 680px) {
     
     nav{
         padding: 15px;
@@ -384,13 +403,15 @@ footer{
     li{
         padding: 0 5px;
     }
+
+    
     
     a{
         font-size: 10px;
     }
 
     .logo img{
-        margin: 0;
+        margin-right: auto;
         padding: 0;
         width: 200px;
         height: 100px;
@@ -409,7 +430,7 @@ footer{
     }
 
     .welcome-hero h1{
-        font-size: 1.8em;
+        font-size: 1.4em;
         line-height: 20px;
     }
 
@@ -437,7 +458,6 @@ footer{
     /* Main page */
   
 
-
     /* Register Section */
     #register{
         padding: 25px;
@@ -454,8 +474,8 @@ footer{
         margin-left: 7em;
     }
     #register input{
-        margin-right: 0;
-        padding: 8px 2em 8px 1em ;
+        margin-right: 0.6em;
+        padding: 8px 1em 8px 1em ;
     }
 
     #register .name label{
@@ -502,14 +522,26 @@ footer{
         font-size: 12px;
     }
 
+    #register .confirm-password label{
+        margin-right: 0;
+        padding: 10 30px 10px 0 ;
+        font-size: 12px;
+    }
+
     .register-btn {
         margin-left: 6em;
+    }
+
+    .field-icon1, .field-icon2{
+        position: relative;
+        /* left: -20em; */
+        right: 50px;
     }
 
     
 }
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 500px) {
     
     nav{
         padding: 15px;
@@ -596,6 +628,7 @@ footer{
 
     #register .name label{
         margin-right: 0;
+        font-size: 12px;
         padding: 10 30px 10px 0 ;
     }
     
@@ -609,6 +642,7 @@ footer{
     #register .email label{
         margin-right: 1.5em;
         padding: 10 30px 10px 0 ;
+        font-size: 12px;
     }
     
     
@@ -619,16 +653,13 @@ footer{
     #register .phone-number label{
         margin-right: 1.5em;
         padding: 10 30px 10px 0 ;
+        font-size: 12px;
     }
     
     #register .password-inputs{
         flex-direction: column;
     }
 
-    .field-icon1, .field-icon2{
-        position: relative;
-        left: -30px;
-    }
     
     #register .password{
         padding-bottom: 10px;
@@ -636,13 +667,28 @@ footer{
     
     #register .password label{
         margin-right: 3.8em;
+        font-size: 12px;
+    }
+    #register .confirm-password label{
+        font-size: 12px;
+    }
+
+    .register-btn button{
+        font-size: 15px;
+    }
+    .register-btn label{
+        font-size: 12px;
     }
 
     .register-btn {
         margin-left: 0;
     }
 
-    
+    .field-icon1, .field-icon2{
+        position: relative;
+        left: -2em;
+        /* right: 50px; */
+    }
     
 }
 
@@ -692,14 +738,14 @@ footer{
     }
 
     .welcome-hero h1{
-        font-size: 1.4em;
+        font-size: 1em;
         line-height: 15px;
         padding-right: 10px;
     }
 
     .welcome-hero p{
         font-size: 10px;
-        margin-top: 30px;
+        margin-top: 25px;
     }
     
     .welcome-hero button{
@@ -722,7 +768,7 @@ footer{
     #register input{
         margin-right: 0;
         margin-left: 0;
-        padding: 5px 0 5px 0x ;
+        padding: 4px ;
     }
 
     .field-icon1, .field-icon2{
@@ -730,8 +776,55 @@ footer{
         left: -30px;
     }
 
+    #register .name label{
+        margin-right: 0;
+        font-size: 12px;
+        padding: 10 30px 10px 0 ;
+    }
+    
+    #register .email-phone-input{
+        flex-direction: column;
+    }
+    #register .email{
+        padding-bottom: 10px;
+    }
+    
+    #register .email label{
+        margin-right: 1.5em;
+        padding: 10 30px 10px 0 ;
+        font-size: 12px;
+    }
+    
+    
+    #register .phone-number{
+        padding-bottom: 10px;
+    }
+    
+    #register .phone-number label{
+        margin-right: 1.5em;
+        padding: 10 30px 10px 0 ;
+        font-size: 12px;
+    }
+    
+    #register .password-inputs{
+        flex-direction: column;
+    }
+
+    
+    #register .password{
+        padding-bottom: 10px;
+    }
+    
+    #register .password label{
+        margin-right: 3.8em;
+        font-size: 12px;
+    }
+    #register .confirm-password label{
+        font-size: 12px;
+    }
+
     .register-btn button{
-        font-size: 17px;
+        font-size: 15px;
     }
     .register-btn label{
         font-size: 12px;
@@ -823,7 +916,7 @@ footer{
         margin-right: 3.8em;
         font-size: 12px;
     }
-    #register .confirm-password{
+    #register .confirm-password label{
         font-size: 12px;
     }
 
