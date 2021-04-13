@@ -4,12 +4,11 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
+    
 }
 
-header{
-    background-image: url("../assets/backimage.png") !important;
-    background-repeat: no-repeat;
-    background-size: 46%;
+body{
+    background-color: #F7F7F7;
 }
 
 /* Navbar */
@@ -37,18 +36,19 @@ a{
 a:hover{
     border-bottom: 1px solid #C0C0C0;
     border-bottom-width: 2px;
+    text-decoration: none;
+    color: #132C33;
 }
 
 .login-Btn{
     border: 1px solid #132C33;
     border-radius: 30px;
-    padding: 3px 15px;
-    /* border-bottom-width: 0; */
+    padding: 1px 15px 5px 15px;
 }
 
 .joinUs-Btn{
     border-radius: 30px;
-    padding: 3px 15px;
+    padding: 1px 15px 5px 15px;
     background-color: #132C33;
     margin-left: 10px;
 }
@@ -65,20 +65,20 @@ a:hover{
     justify-content: space-between;
     align-items: center;
     padding: 10px 25px;
-    
+    border-bottom: 2px solid #DAD8E7;
+    margin-bottom: 3em;
 }
 
 .welcome-hero{
     width: 50vw;
-    margin-right: 150px;
-    margin-left: 35px;
     height: 30em;
-    /* padding: 0 50px; */
 }
 
 
 .welcome-hero h1{
-    font-size: 54px;
+    font-size: 4em;
+    font-weight: bold;
+    line-height: 40px;
 }
 
 .welcome-hero p{
@@ -93,6 +93,7 @@ a:hover{
     background-color: #132C33;
     margin-top: 10px;
     color: white;
+    margin-bottom: 2em;
 }
 
 .hero-img img{
@@ -103,34 +104,29 @@ a:hover{
 }
 
 
-/* Main page */
-#main-section{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 5px 35px;
-    margin: 0 25px;
-}
 
-.main-image img{
-    height: 400px;
-}
+/* Main page */
+
 
 /* Register Section */
-#register{
-    border-left: 2px solid #DAD8E7;
-    padding: 30px;
+#register-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
 
 #register h2{
     font-size: 40px;
     padding: 10px 0;
+    margin-left: 3.8em;
 }
 
 #register p{
     font-size: 10px;
     color: #132C33;
     padding-bottom: 10px;
+    margin-left: 15em;
 }
 #register input{
     padding: 8px 2em 8px 1.5em ;
@@ -150,22 +146,22 @@ a:hover{
 }
 
 #register .name label{
-    margin-right: 85px;
+    margin-right: 6em;
     padding: 10 30px 10px 0 ;
 }
 
+#register .email-phone-input{
+    display: flex;
+}
 #register .email{
     padding-bottom: 10px;
 }
 
 #register .email label{
-    margin-right: 30px;
+    margin-right: 2em;
     padding: 10 30px 10px 0 ;
 }
 
-#register .email input, #register .phone-number input{
-    padding: 8px 20em 8px 1.5em ;
-}
 
 #register .phone-number{
     padding-bottom: 10px;
@@ -176,18 +172,27 @@ a:hover{
     padding: 10 30px 10px 0 ;
 }
 
+#register .password-inputs{
+    display: flex;
+}
+
+.field-icon1, .field-icon2{
+    position: relative;
+    left: -50px;
+}
+
 #register .password{
     padding-bottom: 10px;
 }
 
 #register .password label{
-    margin-right: 55px;
+    margin-right: 4em;
     padding: 10 30px 10px 0 ;
 }
 
 
 .register-btn {
-    text-align: right;
+    margin-left: 10em;
 }
 
 .register-btn button{
@@ -207,7 +212,7 @@ a:hover{
 /* Main footer  */
 
 footer{
-    background-color: #132C33;
+    background-color: #132C33 !important;
     padding: 15px 20px;
     display: flex;
     justify-content: space-between;
@@ -216,4 +221,616 @@ footer{
     font-size: 12px;
     margin-top: 15px;
     width: 100%;
+}
+
+@media only screen and (max-width: 4000px)  and (min-width: 2000px){
+    
+    nav{
+        padding: 25px;
+    }
+
+    li{
+        padding: 0 10px;
+    }
+    
+    a{
+        font-size: 20px;
+    }
+
+    .logo img{
+        margin: 0;
+        padding: 0;
+        width: 250px;
+        height: 200px;
+    }
+
+    #welcome{
+        margin: 10px 5em;
+        
+    }
+    
+    .welcome-hero{
+        width: 50vw;
+        margin-right: 5em;
+        height: 20em;
+    }
+
+    .welcome-hero h1{
+        font-size: 50px;
+        line-height: 30px;
+    }
+
+    .welcome-hero p{
+        font-size: 25px;
+        margin-top: 30px;
+    }
+    
+    .welcome-hero button{
+        border: none;
+        border-radius: 30px;
+        padding: 10px 40px;
+        background-color: #132C33;
+        margin-top: 10px;
+        color: white;
+    }
+    
+     .hero-img img{
+        padding: 0;
+        height: 400px;
+        width: 500px;
+        margin: 0;
+
+    }
+
+
+    /* Main page */
+  
+
+
+    /* Register Section */
+    #register h2{
+        font-size: 30px;
+        margin-left: 5em;
+    }
+
+    #register p{
+        font-size: 15px;
+        color: #132C33;
+        padding-bottom: 5px;
+        margin-left: 10em;
+    }
+    #register input{
+        padding: 10px 0em 10px 4.5em;
+        margin-right: 2em;
+        font-size: 10px;
+        border-radius: 30px;
+        border: 1px solid #132C33;
+    }
+}
+
+
+@media only screen and (max-width: 1000px) {
+    
+    nav{
+        padding: 15px;
+    }
+
+    li{
+        padding: 0 5px;
+    }
+    
+    a{
+        font-size: 10px;
+    }
+
+    .logo img{
+        margin: 0;
+        padding: 0;
+        width: 200px;
+        height: 100px;
+    }
+
+    #welcome{
+        padding: 10px 25px;
+        
+    }
+    
+    .welcome-hero{
+        width: 50vw;
+        margin-right: 0px;
+        margin-left: 10px;
+        height: 20em;
+    }
+
+    .welcome-hero h1{
+        font-size: 35px;
+    }
+
+    .welcome-hero p{
+        font-size: 13px;
+        margin-top: 30px;
+    }
+    
+    .welcome-hero button{
+        border: none;
+        border-radius: 30px;
+        padding: 7px 35px;
+        background-color: #132C33;
+        margin-top: 10px;
+        color: white;
+    }
+    
+     .hero-img img{
+        padding: 0;
+        height: 200px;
+        width: 350px;
+    }
+
+#register input{
+        padding: 6px 0em 6px 3.5em;
+        margin-right: 2em;
+        font-size: 10px;
+        border-radius: 30px;
+        border: 1px solid #132C33;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    
+    nav{
+        padding: 15px;
+    }
+
+    li{
+        padding: 0 5px;
+    }
+    
+    a{
+        font-size: 10px;
+    }
+
+    .logo img{
+        margin: 0;
+        padding: 0;
+        width: 200px;
+        height: 100px;
+    }
+
+    #welcome{
+        padding: 10px 25px;
+        
+    }
+    
+    .welcome-hero{
+        width: 50vw;
+        margin-right: 0px;
+        margin-left: 10px;
+        height: 20em;
+    }
+
+    .welcome-hero h1{
+        font-size: 1.8em;
+        line-height: 20px;
+    }
+
+    .welcome-hero p{
+        font-size: 13px;
+        margin-top: 30px;
+    }
+    
+    .welcome-hero button{
+        border: none;
+        border-radius: 30px;
+        padding: 7px 35px;
+        background-color: #132C33;
+        margin-top: 10px;
+        color: white;
+    }
+    
+     .hero-img img{
+        padding: 0;
+        height: 200px;
+        width: 300px;
+    }
+
+
+    /* Main page */
+  
+
+
+    /* Register Section */
+    #register{
+        padding: 25px;
+        flex-grow: 1;
+    }
+
+    #register h2{
+        font-size: 40px;
+        padding: 10px 0;
+        margin-left: 3.2em;
+    }
+    
+    #register p{
+        margin-left: 7em;
+    }
+    #register input{
+        margin-right: 0;
+        padding: 8px 2em 8px 1em ;
+    }
+
+    #register .name label{
+        margin-right: 2em;
+        padding: 10 30px 10px 0 ;
+        font-size: 12px;
+    }
+    
+    #register .email-phone-input{
+        display: flex;
+    }
+    #register .email{
+        padding-bottom: 10px;
+    }
+    
+    #register .email label{
+        margin-right: 0;
+        padding: 10 0 10px 0 ;
+        font-size: 12px;
+    }
+    
+    
+    #register .phone-number{
+        padding-bottom: 10px;
+    }
+    
+    #register .phone-number label{
+        margin-right: 0;
+        padding: 10 30px 10px 0 ;
+        font-size: 12px;
+    }
+    
+    #register .password-inputs{
+        display: flex;
+    }
+    
+    #register .password{
+        padding-bottom: 10px;
+    }
+    
+    #register .password label{
+        margin-right: 0.5em;
+        padding: 10 30px 10px 0 ;
+        font-size: 12px;
+    }
+
+    .register-btn {
+        margin-left: 6em;
+    }
+
+    
+}
+
+@media only screen and (max-width: 450px) {
+    
+    nav{
+        padding: 15px;
+    }
+
+    li{
+        padding: 0 5px;
+    }
+    
+    a{
+        font-size: 10px;
+    }
+
+    .logo img{
+        margin: 0;
+        padding: 0;
+        width: 200px;
+        height: 100px;
+    }
+
+    #welcome{
+        padding: 10px 25px;
+        
+    }
+    
+    .welcome-hero{
+        width: 40vw;
+        margin: 1em;
+        height: 20em;
+        padding: 1em;
+    }
+
+    .welcome-hero h1{
+        font-size: 1.4em;
+        line-height: 15px;
+    }
+
+    .welcome-hero p{
+        font-size: 10px;
+        margin-top: 30px;
+    }
+    
+    .welcome-hero button{
+        border: none;
+        border-radius: 30px;
+        padding: 7px 35px;
+        font-size: 15px;
+        background-color: #132C33;
+        margin-top: 10px;
+        color: white;
+    }
+    
+     .hero-img img{
+        padding: 0;
+        height: 200px;
+        width: 150px;
+    }
+
+
+    /* Main page */
+  
+
+
+    /* Register Section */
+    #register{
+        padding: 25px;
+        flex-grow: 1;
+    }
+
+    #register h2{
+        font-size: 40px;
+        padding: 0;
+        margin-left: 1.2em;
+    }
+    
+    #register p{
+        margin-left: 5em;
+    }
+    #register input{
+        margin-right: 0;
+        margin-left: 8px;
+        padding: 5px 0 5px 10px ;
+    }
+
+    #register .name label{
+        margin-right: 0;
+        padding: 10 30px 10px 0 ;
+    }
+    
+    #register .email-phone-input{
+        flex-direction: column;
+    }
+    #register .email{
+        padding-bottom: 10px;
+    }
+    
+    #register .email label{
+        margin-right: 1.5em;
+        padding: 10 30px 10px 0 ;
+    }
+    
+    
+    #register .phone-number{
+        padding-bottom: 10px;
+    }
+    
+    #register .phone-number label{
+        margin-right: 1.5em;
+        padding: 10 30px 10px 0 ;
+    }
+    
+    #register .password-inputs{
+        flex-direction: column;
+    }
+
+    .field-icon1, .field-icon2{
+        position: relative;
+        left: -30px;
+    }
+    
+    #register .password{
+        padding-bottom: 10px;
+    }
+    
+    #register .password label{
+        margin-right: 3.8em;
+    }
+
+    .register-btn {
+        margin-left: 0;
+    }
+
+    
+    
+}
+
+
+@media only screen and (max-width: 390px) {
+    
+    nav{
+        padding: 0;
+    }
+
+   
+    li{
+        display: block;
+        margin-bottom: 5px;
+    }
+    
+    a{
+        font-size: 10px;
+    }
+
+    .login-Btn{
+        display: inline;
+        margin: 15px 10px 15px 0;
+    }
+
+    .joinUs-Btn{
+        display: inline;
+    }
+    .logo img{
+        padding-left: 10px;
+        width: 150px;
+        height: 100px;
+    }
+
+
+    #welcome{
+        padding: 10px 25px;
+        
+    }
+    
+    .welcome-hero{
+        width: 40vw;
+        margin: 1em;
+        margin-right: 2em;
+        height: 20em;
+        padding: 1em;
+    }
+
+    .welcome-hero h1{
+        font-size: 1.4em;
+        line-height: 15px;
+        padding-right: 10px;
+    }
+
+    .welcome-hero p{
+        font-size: 10px;
+        margin-top: 30px;
+    }
+    
+    .welcome-hero button{
+        border: none;
+        border-radius: 30px;
+        padding: 7px 25px;
+        font-size: 13px;
+        background-color: #132C33;
+        margin-top: 10px;
+        color: white;
+    }
+    
+     .hero-img img{
+        padding: 0;
+        height: 200px;
+        width: 150px;
+    }
+
+
+    #register input{
+        margin-right: 0;
+        margin-left: 0;
+        padding: 5px 0 5px 0x ;
+    }
+
+    .field-icon1, .field-icon2{
+        position: relative;
+        left: -30px;
+    }
+
+    .register-btn button{
+        font-size: 17px;
+    }
+    .register-btn label{
+        font-size: 12px;
+    }
+
+    footer{
+        font-size: 10px;
+    }
+}
+
+@media only screen and (max-width:330px){
+
+    nav{
+        margin-bottom:0;
+    }
+    .welcome-hero h1{
+        font-size: 1em;
+        line-height: 15px;
+        padding-right: 10px;
+    }
+    .welcome-hero {
+        padding-right: 0px;
+    }
+    .welcome-hero button{
+        border: none;
+        border-radius: 30px;
+        padding: 7px 15px;
+        font-size: 10px;
+        background-color: #132C33;
+        margin-top: 10px;
+        color: white;
+    }
+
+    .hero-img img{
+        padding: 0;
+        height: 200px;
+        width: 100px;
+    }
+    .field-icon1, .field-icon2{
+        display: none;
+    }
+
+    #register input{
+        margin-right: 0;
+        margin-left: 0px;
+        padding: 5px 0 5px 10px ;
+    }
+
+    #register .name label{
+        margin-right: 0;
+        font-size: 12px;
+        padding: 10 30px 10px 0 ;
+    }
+    
+    #register .email-phone-input{
+        flex-direction: column;
+    }
+    #register .email{
+        padding-bottom: 10px;
+    }
+    
+    #register .email label{
+        margin-right: 1.5em;
+        padding: 10 30px 10px 0 ;
+        font-size: 12px;
+    }
+    
+    
+    #register .phone-number{
+        padding-bottom: 10px;
+    }
+    
+    #register .phone-number label{
+        margin-right: 1.5em;
+        padding: 10 30px 10px 0 ;
+        font-size: 12px;
+    }
+    
+    #register .password-inputs{
+        flex-direction: column;
+    }
+
+    
+    #register .password{
+        padding-bottom: 10px;
+    }
+    
+    #register .password label{
+        margin-right: 3.8em;
+        font-size: 12px;
+    }
+    #register .confirm-password{
+        font-size: 12px;
+    }
+
+    .register-btn button{
+        font-size: 15px;
+    }
+    .register-btn label{
+        font-size: 10px;
+    }
 }
