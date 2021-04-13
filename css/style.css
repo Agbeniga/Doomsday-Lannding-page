@@ -478,7 +478,7 @@ footer{
         margin-left: 7em;
     }
     #register input{
-        margin-right: 0.6em;
+        margin-right: 0.2em;
         padding: 8px 1em 8px 1em ;
     }
 
@@ -515,6 +515,11 @@ footer{
     #register .password-inputs{
         display: flex;
     }
+
+    #register .password-inputs input{
+        margin-right: 0;
+        padding: 8px 0.01em 8px 0.35em ;
+    }
     
     #register .password{
         padding-bottom: 10px;
@@ -537,9 +542,7 @@ footer{
     }
 
     .field-icon1, .field-icon2{
-        position: relative;
-        /* left: -20em; */
-        right: 50px;
+        transform: translateX(15px);
     }
 
     
@@ -868,7 +871,7 @@ footer{
         width: 100px;
     }
     .field-icon1, .field-icon2{
-        display: none;
+        transform: translateX(-5px);
     }
 
     #register input{
